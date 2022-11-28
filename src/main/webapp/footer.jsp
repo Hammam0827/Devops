@@ -1,4 +1,4 @@
-footer id="contact-us" class="text-center text-lg-start text-white" style="background-color: rgb(49, 49, 49)">
+<footer id="contact-us" class="text-center text-lg-start text-white" style="background-color: rgb(49, 49, 49)">
     <div class="container p-4 pb-0">
         <section class="">
             <div class="row">

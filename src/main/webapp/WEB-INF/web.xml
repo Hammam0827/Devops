@@ -13,6 +13,10 @@
 <servlet-name>TodoServlet</servlet-name>
 <servlet-class>TodoServlet</servlet-class>
 </servlet>
+<servlet>
+<servlet-name>UserServlet</servlet-name>
+<servlet-class>UserServlet</servlet-class>
+</servlet>
 <servlet-mapping>
 <servlet-name>TodoServlet</servlet-name>
 <url-pattern>/TodoServlet/dashboard</url-pattern>

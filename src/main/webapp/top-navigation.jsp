@@ -1,3 +1,9 @@
+<%
+if (session.getAttribute("name")==null){
+	response.sendRedirect("login.jsp");
+}
+%>
+
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
 	<a class="navbar-brand" href="#"> <img
 		src="${pageContext.request.contextPath}/images/productivity.jpg" width="30" height="30"
@@ -16,14 +22,10 @@
 		</ul>
 
 		<ul class="navbar-nav ml-auto nav-flex-icons">
-			<li class="nav-item" id="registerMenu"><a class="nav-link"
-				href="#" id="register" data-toggle="modal"
-				data-target="#registerModal"> Register</a></li>
-				
-			<li class="nav-item" id="loginMenu"><a class="nav-link" href="#"
-				id="login" data-toggle="modal" data-target="#loginModal"> Login</a>
-			</li>
-			
+		<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="<%=request.getContextPath()%>/login.jsp">Logout</a></li>
+					<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
+						class="nav-link py-3 px-0 px-lg-3 rounded" href="<%=request.getContextPath()%>/login.jsp"><%=session.getAttribute("name") %></a></li>	
 		</ul>
 
 
