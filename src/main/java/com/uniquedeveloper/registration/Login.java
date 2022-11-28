@@ -49,7 +49,7 @@ public class Login extends HttpServlet {
 			ResultSet rs = pst.executeQuery();
 			if (rs.next()) {
 				session .setAttribute("name", rs.getString("uname"));
-				dispatcher = request.getRequestDispatcher("index.jsp");
+				response.sendRedirect("http://localhost:8080/devops_project/TodoServlet/dashboard");
 			} else {
 				request.setAttribute("status", "failed");
 				dispatcher = request.getRequestDispatcher("login.jsp");
