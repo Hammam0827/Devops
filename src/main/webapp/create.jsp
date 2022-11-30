@@ -135,8 +135,6 @@ input[type=submit]:hover {
 	<div><jsp:include page="message-modal.jsp" /></div>
 	<div><jsp:include page="login-modal.jsp" /></div>
 	<div><jsp:include page="register-modal.jsp" /></div>
-	<div><jsp:include page="success-modal.jsp" /></div>
-	<div><jsp:include page="fail-modal.jsp" /></div>
 	<br>
 	<br>
 	
