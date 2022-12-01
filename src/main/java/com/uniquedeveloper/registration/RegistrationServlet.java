@@ -59,7 +59,7 @@ public class RegistrationServlet extends HttpServlet {
 		}
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:8111/devops?useSSL=false","root","PzZh_)LdcD7gNfC");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:8111/devops?useSSL=false","root","password");
 			PreparedStatement pst = con
 					.prepareStatement("insert into users(uname,upwd,uemail,umobile) values(?,?,?,?)");
 			pst.setString(1,uname);
