@@ -1,4 +1,3 @@
-
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -48,7 +47,7 @@ public class CreateServlet extends HttpServlet {
 		try {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection(
-		"jdbc:mysql://localhost:8111/todolist", "root", "PzZh_)LdcD7gNfC");
+		"jdbc:mysql://localhost:8111/todolist", "root", "password");
 		//Step 4: implement the sql query using prepared statement (https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html)
 		PreparedStatement ps = con.prepareStatement("insert into TODOLIST values(?,?,?,?)");
 		//Step 5: parse in the data retrieved from the web form request into the prepared statement accordingly
@@ -60,11 +59,7 @@ public class CreateServlet extends HttpServlet {
 		int i = ps.executeUpdate();
 		//Step 7: check if the query had been successfully execute, return “You are successfully registered” via the response,
 		if (i > 0){
-			PrintWriter writer = response.getWriter();
-			writer.println("<h1>" + "You have successfully created a to do list!" +
-			"</h1>");
-			writer.close();
-		
+			response.sendRedirect("http://localhost:8080/devops_project/TodoServlet/dashboard");
 			}
 			}
 			//Step 8: catch and print out any exception
@@ -75,4 +70,3 @@ public class CreateServlet extends HttpServlet {
 			doGet(request, response);
 		}
 	}
-
