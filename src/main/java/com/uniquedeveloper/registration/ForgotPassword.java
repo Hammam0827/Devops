@@ -46,7 +46,7 @@ public class ForgotPassword extends HttpServlet {
 			props.put("mail.smtp.port", "465");
 			Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 				protected PasswordAuthentication getPasswordAuthentication() {
-					return new PasswordAuthentication("testdevopsmoo@gmail.com", "egedmlizedcguzce");// Put your email
+					return new PasswordAuthentication("testdevopsmoo@gmail.com", "egedmlizedcguzce");// email
 																									// id and
 																									// password here
 				}
@@ -54,10 +54,11 @@ public class ForgotPassword extends HttpServlet {
 			// compose message
 			try {
 				MimeMessage message = new MimeMessage(session);
-				message.setFrom(new InternetAddress(email));// change accordingly
+				message.setFrom(new InternetAddress(email));
 				message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-				message.setSubject("Hello");
-				message.setText("your OTP is: " + otpvalue);
+				message.setSubject("TunnelVision");
+				message.setText("Dear "+ email + ", Your One-time password is: " + otpvalue + 
+						" Please paste this code in your browser.");
 				// send message
 				Transport.send(message);
 				System.out.println("message sent successfully");
@@ -67,7 +68,7 @@ public class ForgotPassword extends HttpServlet {
 				throw new RuntimeException(e);
 			}
 			dispatcher = request.getRequestDispatcher("EnterOtp.jsp");
-			request.setAttribute("message","OTP is sent to your email id");
+			request.setAttribute("message","OTP is sent. Please check your email.");
 			//request.setAttribute("connection", con);
 			mySession.setAttribute("otp",otpvalue); 
 			mySession.setAttribute("email",email); 
