@@ -23,7 +23,7 @@ public class UserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String jdbcURL = "jdbc:mysql://localhost:8111/userdetails";
 	private String jdbcUsername = "root";
-	private String jdbcPassword = "PzZh_)LdcD7gNfC";
+	private String jdbcPassword = "password";
 	private static final String INSERT_USERS_SQL = "INSERT INTO UserDetails" + " (name, password, email, language) VALUES " + " (?, ?, ?);";
 	private static final String SELECT_USER_BY_ID = "select name,password,email,language from UserDetails where name =?";
 	private static final String SELECT_ALL_USERS = "select * from UserDetails ";

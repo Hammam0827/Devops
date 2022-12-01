@@ -1,4 +1,3 @@
-
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -71,4 +70,3 @@ public class CreateServlet extends HttpServlet {
 			doGet(request, response);
 		}
 	}
-
