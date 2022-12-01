@@ -48,7 +48,7 @@ public class CreateServlet extends HttpServlet {
 		try {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection(
-		"jdbc:mysql://localhost:8111/todolist", "root", "password");
+		"jdbc:mysql://localhost:8111/todolist", "root", "PzZh_)LdcD7gNfC");
 		//Step 4: implement the sql query using prepared statement (https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html)
 		PreparedStatement ps = con.prepareStatement("insert into TODOLIST values(?,?,?,?)");
 		//Step 5: parse in the data retrieved from the web form request into the prepared statement accordingly
@@ -64,6 +64,7 @@ public class CreateServlet extends HttpServlet {
 			writer.println("<h1>" + "You have successfully created a to do list!" +
 			"</h1>");
 			writer.close();
+		
 			}
 			}
 			//Step 8: catch and print out any exception

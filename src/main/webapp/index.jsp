@@ -99,4 +99,3 @@ value='${todo.todo}' />">Delete</a>
 	src="https://kit.fontawesome.com/86ec7c1143.js"></script>
 
 </html>
-
