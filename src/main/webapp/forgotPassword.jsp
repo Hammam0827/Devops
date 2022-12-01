@@ -70,6 +70,9 @@ body {
 							the OTP on the next page</li>
 							
 					</ol>
+					<form action="/devops_project/login.jsp" class="inline">
+						<button >Back to login </button>
+					</form>
 					
 				</div>
 				<form class="card mt-4" action="forgotPassword" method="POST">

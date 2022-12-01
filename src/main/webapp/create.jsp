@@ -96,7 +96,7 @@ input[type=submit]:hover {
       <label for="ftitle">Title</label>
     </div>
     <div class="col-75">
-      <input type="text" id="ftite" name="todo" placeholder="title...">
+      <input type="text" id="ftite" name="todo" placeholder="title..." required = "required">
     </div>
   </div>
   <div class="row">
@@ -104,7 +104,7 @@ input[type=submit]:hover {
       <label for="ldescription">Description</label>
     </div>
     <div class="col-75">
-      <input type="text" id="ldescription" name="description" placeholder="description...">
+      <input type="text" id="ldescription" name="description" placeholder="description..." required = "required">
     </div>
   </div>
   <div class="row">
@@ -112,7 +112,7 @@ input[type=submit]:hover {
       <label for="date">Due date</label>
     </div>
     <div class="col-75">
-      <input type="date" id="ldate" name="date" placeholder="date...">
+      <input type="date" id="ldate" name="date" placeholder="date..." required = "required">
     </div>
   </div>
   <div class="row">
@@ -120,7 +120,7 @@ input[type=submit]:hover {
       <label for="subject">Select Time</label>
     </div>
     <div class="col-75">
-      <input type="time" id="ltime" name="time" placeholder="time...">
+      <input type="time" id="ltime" name="time" placeholder="time..." required = "required">
     </div>
   </div>
   <br>

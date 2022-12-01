@@ -74,6 +74,7 @@ value='${todo.todo}' />">Delete</a>
 </table>
 <blockquote> Be productive today! </blockquote>
 </div>
+
 </div>
 
 	<!-- Include the message modal here -->

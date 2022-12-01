@@ -57,19 +57,19 @@ value='${todo.todo}' />" class="form-control"
 					<label>Description</label> <input type="text"
 						value="<c:out
 value='${todo.description}' />" class="form-control"
-						name="description">
+						name="description" required="required">
 				</fieldset>
 				<fieldset class="form-group">
 					<label>Due Date</label> <input type="date"
 						value="<c:out
 value='${todo.date}' />" class="form-control"
-						name="date">
+						name="date" required="required">
 				</fieldset>
 				<fieldset class="form-group">
 					<label> Set Time</label> <input type="time"
 						value="<c:out
 value='${todo.time}' />" class="form-control"
-						name="time">
+						name="time" required="required">
 				</fieldset>
 				<button type="submit" class="btn btn-success">Save</button>
 				</form>

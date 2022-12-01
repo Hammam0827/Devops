@@ -166,6 +166,7 @@ public class TodoServlet extends HttpServlet {
 		switch (action) {
 		case "/TodoServlet/delete":
 		deleteTodo(request, response);
+		request.setAttribute("status", "done");
 		break;
 		case "/TodoServlet/edit":
 		showEditForm(request, response);
