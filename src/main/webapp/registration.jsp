@@ -31,7 +31,7 @@
 							<div class="form-group">
 								<label for="name"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
-									type="text" name="name" id="name" placeholder="Your Name" required = "required" />
+									type="text" name="name" id="name" placeholder="Your Name"  required = "required"/>
 							</div>
 							<div class="form-group">
 								<label for="email"><i class="zmdi zmdi-email"></i></label> <input
@@ -52,7 +52,7 @@
 									placeholder="Contact no" required = "required" />
 							</div>
 							<div class="form-group">
-								<input type="checkbox" name="agree-term" id="agree-term"
+								<input type="checkbox" name="agree-term" id="agree-term" required = "required" 
 									class="agree-term" /> <label for="agree-term"
 									class="label-agree-term"><span><span></span></span>I
 									agree all statements in <a href="#" class="term-service">Terms
