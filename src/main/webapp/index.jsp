@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+s<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,6 +29,7 @@ crossorigin="anonymous">
 <!-- Add new user button redirects to the register.jsp page -->
 <a href="<%=request.getContextPath()%>/create.jsp" class="button button1">Add New To do list</a>
 </div>
+
 <br>
 <!-- Create a table to list out all current users information -->
 <table class="table">
