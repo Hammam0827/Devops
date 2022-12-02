@@ -20,7 +20,7 @@ if (session.getAttribute("name")==null){
 				id="about" data-toggle="modal" data-target="#messageModal">
 					About </a></li>
 		</ul>
-
+				
 		<ul class="navbar-nav ml-auto nav-flex-icons">
 		<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="<%=request.getContextPath()%>/login.jsp">Logout</a></li>
