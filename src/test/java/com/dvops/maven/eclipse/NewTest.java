@@ -28,7 +28,7 @@ public class NewTest {
 	  webDriver.navigate().to("http://localhost:8080/devops_project/");
 	  
 	  //Assert the title to check that we are indeed in the correct website
-	  Assert.assertEquals(webDriver.getTitle(), "To do list");
+	  Assert.assertEquals(webDriver.getTitle(), "To do list!");
 	  
 	  System.out.println("title: "+webDriver.getTitle());
 	  
