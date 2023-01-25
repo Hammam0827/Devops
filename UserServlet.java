@@ -109,7 +109,7 @@ public class UserServlet extends HttpServlet {
     		int i = statement.executeUpdate();
     		}
     		//Step 3: redirect back to UserServlet (note: remember to change the url to your project name)
-    		response.sendRedirect("http://localhost:8080/devops_project/UserServlet/dashboard");
+    		response.sendRedirect("http://localhost:8090/devops_project/UserServlet/dashboard");
     		}
     private void deleteUser(HttpServletRequest request, HttpServletResponse response)
     		throws SQLException, IOException {
@@ -122,7 +122,7 @@ public class UserServlet extends HttpServlet {
     		int i = statement.executeUpdate();
     		}
     		//Step 3: redirect back to UserServlet dashboard (note: remember to change the url to your project name)
-    		response.sendRedirect("http://localhost:8080/devops_project/UserServlet/dashboard");
+    		response.sendRedirect("http://localhost:8090/devops_project/UserServlet/dashboard");
     		}
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)

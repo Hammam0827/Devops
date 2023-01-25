@@ -132,7 +132,7 @@ public class TodoServlet extends HttpServlet {
     int i = statement.executeUpdate();
     }
     //Step 3: redirect back to UserServlet (note: remember to change the url to your project name)
-    response.sendRedirect("http://localhost:8080/devops_project/TodoServlet/dashboard");
+    response.sendRedirect("http://localhost:8090/devops_project/TodoServlet/dashboard");
     }
     
   //method to delete user
@@ -147,7 +147,7 @@ public class TodoServlet extends HttpServlet {
     int i = statement.executeUpdate();
     }
     //Step 3: redirect back to UserServlet dashboard (note: remember to change the url to your project name)
-    response.sendRedirect("http://localhost:8080/devops_project/TodoServlet/dashboard");
+    response.sendRedirect("http://localhost:8090/devops_project/TodoServlet/dashboard");
     }
 
 
