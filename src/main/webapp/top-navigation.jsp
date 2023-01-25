@@ -16,7 +16,7 @@ if (session.getAttribute("name")==null){
 
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav">
-			<li class="nav-item" id="aboutMenu"><a class="nav-link" href="#"
+			<li class="nav-item" id="aboutMenu" role="aboutinfo"><a class="nav-link" href="#"
 				id="about" data-toggle="modal" data-target="#messageModal">
 					About </a></li>
 		</ul>
