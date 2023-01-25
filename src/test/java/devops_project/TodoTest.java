@@ -1,22 +1,18 @@
 package devops_project;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-
+import org.testng.Assert;
 
 import todo.Todo;
 
 class TodoTest {
 	
-	private Todo td;
-	private String todo;
-	private String description;
-	private String date;
-	private String time;
+protected String todo;
+protected String description;
+protected String date;
+protected String time;
 	
 	public void Todo(String todo, String description, String date, String time) {
 		this.todo = todo;
@@ -25,14 +21,12 @@ class TodoTest {
 		this.time = time;
 	}
 	
-
-	
 	@BeforeEach
 	void setUp() throws Exception {
-		todo = "work";
+		todo = "study";
 		description = "important";
-		date = "10-12-22";
-		time = "10:23pm";
+		date = "10-10-22";
+		time = "10:32pm";
 	}
 
 	@AfterEach
@@ -41,50 +35,55 @@ class TodoTest {
 
 	@Test
 	void testTodo() {
-		return;
-	}
-
-	@Test
-	void testGetTodo() {
-		//fail("Not yet implemented");
-		return;
-	}
-
-	@Test
-	void testSetTodo() {
-		//fail("Not yet implemented");
-		return;
 		
 	}
 
 	@Test
+	void testGetTodo() {
+		Todo todo = new Todo ("study", "important", "10-10-22", "10:32pm");
+		Assert.assertTrue(todo.getTodo() == "study");
+	}
+
+	@Test
+	void testSetTodo() {
+		Todo todo = new Todo ("study", "important", "10-10-22", "10:32pm");
+		Assert.assertTrue(todo.getTodo() == "study");
+	}
+
+	@Test
 	void testGetDescription() {
-		return;
+		Todo description = new Todo ("study", "important", "10-10-22", "10:32pm");
+		Assert.assertTrue(description.getDescription() == "important");
 	}
 
 	@Test
 	void testSetDescription() {
-		return;
+		Todo description = new Todo ("study", "important", "10-10-22", "10:32pm");
+		Assert.assertTrue(description.getDescription() == "important");
 	}
 
 	@Test
 	void testGetDate() {
-		return;
+		Todo date = new Todo ("study", "important", "10-10-22", "10:32pm");
+		Assert.assertTrue(date.getDate() == "10-10-22");
 	}
 
 	@Test
 	void testSetDate() {
-		return;
+		Todo date = new Todo ("study", "important", "10-10-22", "10:32pm");
+		Assert.assertTrue(date.getDate() == "10-10-22");
 	}
 
 	@Test
 	void testGetTime() {
-		return;
+		Todo time = new Todo ("study", "important", "10-10-22", "10:32pm");
+		Assert.assertTrue(time.getTime() == "10:32pm");
 	}
 
 	@Test
 	void testSetTime() {
-		return;
+		Todo time = new Todo ("study", "important", "10-10-22", "10:32pm");
+		Assert.assertTrue(time.getTime() == "10:32pm");
 	}
 
 }
