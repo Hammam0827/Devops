@@ -12,7 +12,38 @@
 
 				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
 					<h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
-					<form action="https://formspree.io/f/moqbobyr" method="POST">
+<form action="sendFeedback" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </div>
+  <div>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject">
+  </div>
+  <div>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+<script type="text/javascript">
+  window.onload = function() {
+    if (sessionStorage.getItem("feedbackSent") === "true") {
+      alert("Feedback has been sent successfully.");
+      sessionStorage.removeItem("feedbackSent");
+    }
+  };
+</script>
+
+
+					
+					<%-- <form action="https://formspree.io/f/moqbobyr" method="POST">
 						<label> Your email: <input type="email" name="User Email"> </label> 
 						<label for="Reason for Feedback">Reason for Feedback</label> <select
 							name="Reason for Feedback" id="Reason for Feedback" required="">
@@ -25,7 +56,7 @@
 						</label>
 						<button type="submit">Send</button>
 					</form>
-				</div>
+				</div>--%>
 
 			</div>
 		</section>
