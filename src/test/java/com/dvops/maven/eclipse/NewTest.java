@@ -29,7 +29,7 @@ public class NewTest {
 	  webDriver.navigate().to("http://localhost:8090/devops-web-project-deployment/");
 	  
 	  //Assert the title to check that we are indeed in the correct website
-	  Assert.assertEquals(webDriver.getTitle(), "To do list!");
+	  Assert.assertEquals(webDriver.getTitle(), "To do list");
 	  
 System.out.println("title: "+webDriver.getTitle());
 	  
@@ -57,7 +57,7 @@ System.out.println("title: "+webDriver.getTitle());
   @AfterTest
   public void afterTest() {
 	  //Quit the ChromeDriver and close all associated window at the end of test
-	  webDriver.quit();			
+//	  webDriver.quit();			
   }
 
 }
