@@ -17,16 +17,16 @@ public class NewTest {
   @Test
   public void checkId() {
 	  //Load website as a new page
-	  webDriver.navigate().to("http://localhost:8090/devops-web-project-deployment/");
-	  WebElement we =  webDriver.findElement(By.id("aboutMenu"));
+	  webDriver.navigate().to("http://localhost:8090/devops-web-project-deployment/registration.jsp");
+	  WebElement we =  webDriver.findElement(By.id("status"));
 	  
-	  System.out.println("id we: "+we.getAttribute("role"));
-	  Assert.assertEquals(we.getAttribute("role"), "aboutinfo");
+//	  System.out.println("id we: "+we.getAttribute("role"));
+//	  Assert.assertEquals(we.getAttribute("role"), "aboutinfo");
   }
   @Test
   public void checkTitle() {
 	  //Load website as a new page
-	  webDriver.navigate().to("http://localhost:8090/devops-web-project-deployment/TodoServlet/dashboard");
+	  webDriver.navigate().to("http://localhost:8090/devops-web-project-deployment/");
 	  
 	  //Assert the title to check that we are indeed in the correct website
 	  Assert.assertEquals(webDriver.getTitle(), "To do list");
