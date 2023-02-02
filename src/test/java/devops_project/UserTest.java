@@ -89,7 +89,7 @@ class UserTest {
 	@Test
 	void testSetEmail() {
 		User user = new User ("admin", "test","hello@gmail.com","english");
-		user.setEmail("ok");
+		user.setEmail("hello@gmail.com");
 		equals(user.getEmail());
 	}
 	
