@@ -9,8 +9,6 @@ import org.testng.annotations.BeforeMethod;
 
 import com.dvops.maven.eclipse.User;
 
-import test.java.devops_project.Assert;
-
 
 class UserTest {
 	
