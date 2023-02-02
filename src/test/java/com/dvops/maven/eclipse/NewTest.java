@@ -17,7 +17,7 @@ public class NewTest {
   @Test
   public void checkId() {
 	  //Load website as a new page
-	  webDriver.navigate().to("http://localhost:8090/devops_project/");
+	  webDriver.navigate().to("http://localhost:8080/devops_project/");
 	  WebElement we =  webDriver.findElement(By.id("aboutMenu"));
 	  
 	  System.out.println("id we: "+we.getAttribute("role"));
@@ -26,10 +26,10 @@ public class NewTest {
   @Test
   public void checkTitle() {
 	  //Load website as a new page
-	  webDriver.navigate().to("http://localhost:8090/devops_project/");
+	  webDriver.navigate().to("http://localhost:8080/devops_project/");
 	  
 	  //Assert the title to check that we are indeed in the correct website
-	  Assert.assertEquals(webDriver.getTitle(), "To do list!");
+	  Assert.assertEquals(webDriver.getTitle(), "To do list");
 	  
 System.out.println("title: "+webDriver.getTitle());
 	  
