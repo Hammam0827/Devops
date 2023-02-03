@@ -26,7 +26,7 @@ public class TodoServlet extends HttpServlet {
 	//Step 1: Prepare list of variables used for database connections
 		private String jdbcURL = "jdbc:mysql://localhost:8111/todolist";
 		private String jdbcUsername = "root";
-		private String jdbcPassword = "password";
+		private String jdbcPassword = "PzZh_)LdcD7gNfC";
 		//Step 2: Prepare list of SQL prepared statements to perform CRUD to our database
 		private static final String INSERT_TODO_SQL = "INSERT INTO todolist" + " (todo, description, date, time) VALUES " + " (?, ?, ?);";
 		private static final String SELECT_TODO_BY_ID = "select todo, description, date, time from todolist where todo =?";
