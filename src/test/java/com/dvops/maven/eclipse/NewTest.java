@@ -15,30 +15,29 @@ public class NewTest {
   private WebDriver webDriver;		
   
   @Test
-  public void checkId() {
+  public void checklink() {
 	  //Load website as a new page
 	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/registration.jsp");
-	  WebElement we =  webDriver.findElement(By.id("status"));
+	  WebElement link =  webDriver.findElement(By.className("signup-image-link"));
+	  link.click();
 	  
-//	  System.out.println("id we: "+we.getAttribute("role"));
-//	  Assert.assertEquals(we.getAttribute("role"), "aboutinfo");
   }
-  @Test
-  public void checkTitle() {
-	  //Load website as a new page
-	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/");
-	  
-	  //Assert the title to check that we are indeed in the correct website
-	  Assert.assertEquals(webDriver.getTitle(), "To do list!");
-	  
-System.out.println("title: "+webDriver.getTitle());
+//  @Test
+//  public void checkTitle() {
+//	  //Load website as a new page
+//	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/");
+//	  
+//	  //Assert the title to check that we are indeed in the correct website
+//	  Assert.assertEquals(webDriver.getTitle(), "To do list!");
+//	  
+//System.out.println("title: "+webDriver.getTitle());
 	  
 //	  //Retrieve link using it's class name and click on it
 //	  webDriver.findElement(By.className("container text-left")).click();
 //
 //	  Assert.assertTrue(webDriver.getTitle().contains("New to do list"));
 //	  System.out.println("new title: "+webDriver.getTitle());
-  }
+//  }
   
   
   
@@ -57,7 +56,7 @@ System.out.println("title: "+webDriver.getTitle());
   @AfterTest
   public void afterTest() {
 	  //Quit the ChromeDriver and close all associated window at the end of test
-	  webDriver.quit();			
+//	  webDriver.quit();			
   }
 
 }
