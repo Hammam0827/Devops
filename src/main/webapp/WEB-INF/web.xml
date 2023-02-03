@@ -19,7 +19,7 @@
 </servlet>
 <servlet-mapping>
 <servlet-name>TodoServlet</servlet-name>
-<url-pattern>/TodoServlet/dashboard</url-pattern>
+<url-pattern>/TodoServlet/Dashboard</url-pattern>
 <url-pattern>/TodoServlet/edit</url-pattern>
 <url-pattern>/TodoServlet/update</url-pattern>
 <url-pattern>/TodoServlet/delete</url-pattern>
