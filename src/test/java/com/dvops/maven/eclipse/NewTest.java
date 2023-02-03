@@ -15,29 +15,47 @@ public class NewTest {
   private WebDriver webDriver;		
   
   @Test
-  public void checklink() {
+  public void directToRegisterjsp() {
+	  //Load website as a new page
+	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/login.jsp");
+	  WebElement link1 =  webDriver.findElement(By.className("signup-image-link"));
+	  link1.click();
+}
+
+
+  @Test
+	  public void checkLinkAgree() {
+		  //Load website as a new page
+		  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/registration.jsp");
+		  WebElement links =  webDriver.findElement(By.className("label-agree-term"));
+		  links.click();
+  }
+  
+  @Test
+  public void checkLinkSignup() {
+	  //Load website as a new page
+	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/registration.jsp");
+	  WebElement linksignup =  webDriver.findElement(By.id("signup"));
+	  linksignup.click();
+}
+  @Test
+  public void checkLinkDirectToLoginjsp() {
 	  //Load website as a new page
 	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/registration.jsp");
 	  WebElement link =  webDriver.findElement(By.className("signup-image-link"));
 	  link.click();
-	  
   }
-//  @Test
-//  public void checkTitle() {
-//	  //Load website as a new page
-//	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/");
-//	  
-//	  //Assert the title to check that we are indeed in the correct website
-//	  Assert.assertEquals(webDriver.getTitle(), "To do list!");
-//	  
-//System.out.println("title: "+webDriver.getTitle());
+  @Test
+  public void checkTitle() {
+	  //Load website as a new page
+	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/registration.jsp");
 	  
-//	  //Retrieve link using it's class name and click on it
-//	  webDriver.findElement(By.className("container text-left")).click();
-//
-//	  Assert.assertTrue(webDriver.getTitle().contains("New to do list"));
-//	  System.out.println("new title: "+webDriver.getTitle());
-//  }
+	  //Assert the title to check that we are indeed in the correct website
+	  Assert.assertEquals(webDriver.getTitle(), "Register");
+	  
+System.out.println("title: "+webDriver.getTitle());
+  }
+	 
   
   
   
