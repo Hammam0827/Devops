@@ -23,7 +23,7 @@ crossorigin="anonymous">
 <div class="row">
 <div class="container">
 <br>
-<h3 class="text-center"><b>My ToDo List!</b></h3>
+<h3 class="text-center"><b>My ToDo List</b></h3>
 <hr>
 <div class="container text-left">
 <!-- Add new user button redirects to the register.jsp page -->
