@@ -17,7 +17,7 @@ public class NewTest {
   @Test
   public void checkId() {
 	  //Load website as a new page
-	  webDriver.navigate().to("http://localhost:8090/devops-web-project-deployment/registration.jsp");
+	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/registration.jsp");
 	  WebElement we =  webDriver.findElement(By.id("status"));
 	  
 //	  System.out.println("id we: "+we.getAttribute("role"));
@@ -26,7 +26,7 @@ public class NewTest {
   @Test
   public void checkTitle() {
 	  //Load website as a new page
-	  webDriver.navigate().to("http://localhost:8090/devops-web-project-deployment/");
+	  webDriver.navigate().to("http://localhost:8090/devops-project-deployment/");
 	  
 	  //Assert the title to check that we are indeed in the correct website
 	  Assert.assertEquals(webDriver.getTitle(), "To do list");
