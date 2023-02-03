@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
 
-import todo.Todo;
+import com.dvops.maven.eclipse.Todo;
 
 class TodoTest {
 	
@@ -14,12 +14,12 @@ protected String description;
 protected String date;
 protected String time;
 	
-	public void Todo(String todo, String description, String date, String time) {
-		this.todo = todo;
-		this.description = description;
-		this.date = date;
-		this.time = time;
-	}
+public void Todo(String todo, String description, String date, String time) {
+	this.todo = todo;
+	this.description = description;
+	this.date = date;
+	this.time = time;
+}
 	
 	@BeforeEach
 	void setUp() throws Exception {

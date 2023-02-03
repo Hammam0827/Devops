@@ -1,4 +1,4 @@
-package todo;
+package com.dvops.maven.eclipse;
 
 public class Todo {
 	protected String todo;

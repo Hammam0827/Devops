@@ -5,19 +5,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
 import com.dvops.maven.eclipse.User;
 
 
 class UserTest {
 	
-	private User us;
-	private String name;
-	private String password;
-	private String email;
-	private String language;
+protected String name;
+protected String password;
+protected String email;
+protected String language;
 
 	
 	public void User(String name, String password, String email, String language) {
@@ -27,12 +24,6 @@ class UserTest {
 		this.language = language;
 	}
 	
-	/**
-	 * 
-	 * @throws Exception
-	 */
-
-	@BeforeMethod
 	@BeforeEach
 	void setUp() throws Exception {
 		name = "admin";
@@ -42,7 +33,6 @@ class UserTest {
 	}
 
 
-	@AfterMethod
 	@AfterEach
 	void tearDown() throws Exception {
 	}
