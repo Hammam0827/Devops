@@ -47,7 +47,7 @@ public class SendFeedbackServlet extends HttpServlet {
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
-        response.sendRedirect("http://localhost:8090/devops_project/TodoServlet/dashboardd");
+        response.sendRedirect("http://localhost:8090/devops_project/TodoServlet/dashboard");
     }
 
     private static class EmailAuthenticator extends javax.mail.Authenticator {
