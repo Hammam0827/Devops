@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-<title>To do list</title>
+<title>To do list!</title>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <link rel="stylesheet"
 href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,6 +15,7 @@ crossorigin="anonymous">
   <%@include file="css/mystyle.css" %>
 </style>
 </head>
+
 <body>
 	<!-- Include top navigation here -->
 	<div><jsp:include page="top-navigation.jsp" /></div>
@@ -28,6 +29,7 @@ crossorigin="anonymous">
 <!-- Add new user button redirects to the register.jsp page -->
 <a href="<%=request.getContextPath()%>/create.jsp" class="button button1">Add New To do list</a>
 </div>
+
 <br>
 <!-- Create a table to list out all current users information -->
 <table class="table">
@@ -73,13 +75,16 @@ value='${todo.todo}' />">Delete</a>
 </table>
 <blockquote> Be productive today! </blockquote>
 </div>
+
 </div>
+
 	<!-- Include the message modal here -->
 	<div><jsp:include page="message-modal.jsp" /></div>
 	<div><jsp:include page="login-modal.jsp" /></div>
 	<div><jsp:include page="register-modal.jsp" /></div>
 	<br>
 	<br>
+
 	<!-- Include the footer here -->
 	<div><jsp:include page="footer.jsp"  /></div> 
 </body>
@@ -94,4 +99,5 @@ value='${todo.todo}' />">Delete</a>
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script type="text/javascript"
 	src="https://kit.fontawesome.com/86ec7c1143.js"></script>
+
 </html>
