@@ -1,4 +1,5 @@
 package com.dvops.maven.eclipse;
+
 import org.openqa.selenium.By;
 //import necessary Selenium WebDriver classes
 import org.openqa.selenium.WebDriver;
@@ -28,7 +29,7 @@ public class NewTest {
 	  webDriver.navigate().to("http://localhost:8090/devops_project/");
 	  
 	  //Assert the title to check that we are indeed in the correct website
-	  Assert.assertEquals(webDriver.getTitle(), "To do list");
+	  Assert.assertEquals(webDriver.getTitle(), "To do list!");
 	  
 System.out.println("title: "+webDriver.getTitle());
 	  
