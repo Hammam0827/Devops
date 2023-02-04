@@ -11,7 +11,7 @@
 				</div>
 
 				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-					<h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
+					<h6 class="text-uppercase mb-4 font-weight-bold">Contact Us!</h6>
 					<form action="sendFeedback" method="post">
 					<label for="name">Name:</label>
 					<input type="text" id="name" name="name"><br><br>
