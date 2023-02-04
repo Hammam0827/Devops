@@ -34,7 +34,7 @@ public class SendFeedbackServletTest {
     public void testDoPost() throws ServletException, IOException {
         when(request.getParameter("name")).thenReturn("John Doe");
         when(request.getParameter("email")).thenReturn("harizjamil7@gmail.com");
-        when(request.getParameter("subject")).thenReturn("Test.");
+        when(request.getParameter("subject")).thenReturn("Testing.");
         when(request.getParameter("message")).thenReturn("This is a sample feedback.");
         
 
