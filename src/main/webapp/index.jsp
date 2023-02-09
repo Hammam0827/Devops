@@ -27,7 +27,7 @@ crossorigin="anonymous">
 <hr>
 <div class="container text-left">
 <!-- Add new user button redirects to the register.jsp page -->
-<a href="<%=request.getContextPath()%>/create.jsp" class="button button1">Add New To do list!</a>
+<a href="<%=request.getContextPath()%>/create.jsp" class="button button1">Add New To do list</a>
 </div>
 
 <br>
